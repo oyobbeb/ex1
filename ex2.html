@@ -1,0 +1,84 @@
+<html>
+<head></head>
+<body>
+    
+
+<script>
+function repeatVaco(n) {
+  let result = "";
+    for(let i = 0 ; i < n ; i++) {
+        result += i % 2 === 0 ? "바" : "코";
+  }
+  return result;
+}
+
+
+const result1 = (repeatVaco(1) === "바");
+const result2 = (repeatVaco(2) === "바코");
+const result3 = (repeatVaco(4) === "바코바코");
+const result4 = (repeatVaco(5) === "바코바코바");
+const result5 = (repeatVaco(10) === "바코바코바코바코바코");
+
+if (
+  result1 &&
+  result2 &&
+  result3 &&
+  result4 &&
+  result5
+) {
+  alert("🎉");
+}
+
+// var result = "바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코바코"
+//   //함수를 완성하세요
+
+//   return result.substring(0,n);
+
+
+
+
+
+// const n1 = 370;
+// const n2 = 1357;
+// const n3 = 33333;
+
+// function splitNumber(num) {
+//   var result = (num+'').split('').map(Number);
+//   return result;
+// }
+
+// const result1 = splitNumber(n1); // [3, 7, 0]를 반환해야 합니다.
+// const result2 = splitNumber(n2); // [1, 3, 5, 7]를 반환해야 합니다.
+// const result3 = splitNumber(n3); // [3, 3, 3, 3, 3]를 반환해야 합니다.
+
+// if (
+//   checkResult(result1, [3, 7, 0]) &&
+//   checkResult(result2, [1, 3, 5, 7]) &&
+//   checkResult(result3, [3, 3, 3, 3, 3])
+// ) {
+//   alert("🎉");
+// }
+
+
+// function createArray(arr1, arr2) {
+//   var result = {};
+//   arr1.forEach((key, i) => result[key] = arr2[i]);
+//   return result;
+// }
+
+// const result1 = createArray(["Jett", "Ken"], [30, 40]);
+// const result2 = createArray(["Math", "Science", "English"], [85, 90, 75]);
+// const result3 = createArray(["Pizza", "Salad", "Pasta", "Steak"], [3, 4, 2, 1]);
+
+// if (
+//   checkResult(result1, { Jett: 30, Ken: 40 }) &&
+//   checkResult(result2, { Math: 85, Science: 90, English: 75 }) &&
+//   checkResult(result3, { Pizza: 3, Salad: 4, Pasta: 2, Steak: 1 }) 
+// ) {
+//   alert("🎉");
+// }
+</script>
+
+</body>
+
+</html>
